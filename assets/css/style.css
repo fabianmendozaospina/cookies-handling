@@ -7,6 +7,7 @@
 
 :root {
     --app-background-color: #1a1826;
+    --app-blue: #415ff5;
     --app-white: #fff;
     --app-magenta: #ff00ff;
     --app-orange: #ffa500;
@@ -44,6 +45,11 @@ h1 {
 
 .cookie-def {
     filter: blur(0);
+}
+
+span {
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
 
 .cookie-def-blur {
@@ -112,7 +118,32 @@ h1 {
     margin: 15px 0 15px 0;
 }
 
-.open-agreements {
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--app-blue);
+    border-radius: 20px / 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    background-color: var(--app-blue);
+    color: var(--app-white);
+    margin-top: 18px;
+}
+
+button:hover {
+    color: var(--app-white);
+}
+
+button.secondary {
+    background-color: var(--app-white);
+    color: var(--app-blue);
+}
+
+.open{
     overflow: hidden;
 }
 
@@ -155,12 +186,11 @@ h1 {
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: var(--app-blue);
   }
   
   input:focus + .slider {
@@ -168,8 +198,6 @@ h1 {
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
   
