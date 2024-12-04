@@ -1,6 +1,6 @@
 'use strict';
 
-import { select, getElement, listen } from "./utils.js";
+import { select, listen } from "./utils.js";
 
 const TOTAL_SECONDS_REGULAR_COOKIES = 15;
 const TOTAL_SECONDS_REJECTED_COOKIE = 20;
